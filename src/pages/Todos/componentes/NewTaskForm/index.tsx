@@ -6,7 +6,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useTaskDataMutate } from "../../../../components/hooks/useTaskDataMutate";
 import { TaskData } from "../../../../components/interface/TaskData";
 
-
 const newTaskFormValidationSchema = zod.object({
   description: zod.string().min(1, "Informe a tarefa"),
 });
@@ -27,10 +26,10 @@ export function NewTaskForm() {
   const submit = () => {
     const taskData: TaskData = {
       description: description,
+      completed: false,
     };
     mutate(taskData);
     reset();
-
   };
 
   return (
