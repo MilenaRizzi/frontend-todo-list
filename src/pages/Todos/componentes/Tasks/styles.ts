@@ -1,3 +1,4 @@
+import { Trash } from "phosphor-react";
 import { styled } from "styled-components";
 
 export const TasksContainer = styled.div`
@@ -51,29 +52,47 @@ export const TaskContent = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   padding: 16px;
-  background-color: ${(props) => props.theme["gray-400"]};
+  background-color: ${(props) => props.theme["gray-500"]};
   border-radius: 8px;
   margin-bottom: 12px;
 
   button {
-    background-color: ${(props) => props.theme["gray-400"]};
+    background-color: ${(props) => props.theme["gray-500"]};
     border: 0;
     margin-top: 5px;
-    display: flex;
-    align-items: flex-center;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+
+    &:hover {
+      background-color: ${(props) => props.theme["gray-400"]};
+    }
+
+    &:hover .trashIcon {
+      color: ${(props) => props.theme["danger"]};
+    }
   }
 `;
 
-export const Task = styled.div<{ completed: boolean }>`
+export const TrashIcon = styled(Trash)`
+  color: #808080;
+  margin: 2px 3px;
+`;
+
+export const Task = styled.div<{ checked: boolean }>`
   display: flex;
   gap: 12px;
+  &:hover {
+    cursor: pointer;
+  }
   p {
     width: 632px;
     font-size: 14px;
     line-height: 22px;
     ${(props) =>
-    props.completed &&
-    `
+      props.checked &&
+      `
       text-decoration: line-through;
       color: #808080;
     `}
