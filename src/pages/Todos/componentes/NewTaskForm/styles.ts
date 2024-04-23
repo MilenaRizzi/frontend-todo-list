@@ -33,6 +33,12 @@ export const NewTaskContainer = styled.div`
       flex-direction: row;
       align-items: center;
       justify-content: center;
+
+      &:hover {
+        background: ${(props) => props.theme["blue"]};
+        cursor: pointer;
+      }
+
       gap: 8px;
     }
   }
