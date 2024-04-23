@@ -30,14 +30,15 @@ npm run dev
 ```
 
 ## Créditos:
-- O frontend do projeto é advindo de uma desafio do curso Trilha React da plataforma Rocketseat. Para praticar ainda mais os meus conhecimentos, realizei a construção de uma backend em Java - Spring Boot que permite a persistência das tarefas em um banco de dados Postgres. 
+- O frontend do projeto é advindo de uma desafio do curso Trilha React da plataforma Rocketseat. Para praticar ainda mais os meus conhecimentos, realizei a construção de um backend em Java - Spring Boot que permite a persistência das tarefas em um banco de dados Postgres. 
 
 ## 🫂 Integração com Backend
 
 Para realizar a integração com o Backend, você pode clonar o projeto e rodar localmente
+
 👉 [Link do repositório](https://github.com/MilenaRizzi/backend-todo-list)
 
-# Autora
+## Autora
 Milena Clara Ribeiro Rizzi
 
 
