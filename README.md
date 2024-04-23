@@ -3,7 +3,7 @@
 Este projeto é uma simples aplicação de uma lista de tarefas online. A aplicação foi desenvolvida usando **React, Typescript e React Query**.
 
 <h1 align="center">
-    <img src="./public/to-do-list.png" width="300"/>
+    <img src="./public/to-do-list.png" width="400"/>
 </h1>
 
 #Como executar o projeto
