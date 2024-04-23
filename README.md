@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# To Do List - Aplicação Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma simples aplicação de uma lista de tarefas online. A aplicação foi desenvolvida usando **React, Typescript e React Query**.
 
-Currently, two official plugins are available:
+<h1 align="center">
+    <img src="./public/to-do-list.png" width="300"/>
+</h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Como executar o projeto
+## 💻 Requisitos
 
-## Expanding the ESLint configuration
+Antes de iniciar, você deve ter o Node.js e o NPM instalados em sua máquina.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalando
 
-- Configure the top-level `parserOptions` property like this:
+Você deve clonar o projeto em sua máquina. Sendo assim, você deve realizar o seguinte comando em seu terminal;
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+# clonar repositório
+git clone: [https://github.com/MilenaRizzi/frontend-todo-list]
+
+# entrar na pasta todo-list
+cd todo-list
+
+# instalar dependências
+npm instal
+
+# executar o projeto
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Créditos:
+- O frontend do projeto é advindo de uma desafio do curso Trilha React da plataforma Rocketseat. Para praticar ainda mais os meu conhecimentos, realizei a construção de uma backend em Java - Spring Boot que permite a persistência das tarefas em um banco de dados Postgres. 
+
+## 🫂 Integração com Backend
+
+Para realizar a integração com o Backend, você pode clonar o projeto e rodar localmente
+👉 [Link do repositório](https://github.com/MilenaRizzi/backend-todo-list)
+
+# Autora
+Milena Clara Ribeiro Rizzi
+
+
