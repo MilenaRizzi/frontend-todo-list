@@ -9,5 +9,5 @@ export function Todos() {
       <NewTaskForm />
       <Tasks />
     </div>
-  )
+  );
 }
