@@ -13,5 +13,5 @@ export const defaultTheme = {
   'blue': '#4EA8DE',
   'blue-dark': '#1E6F9F',
 
-  'danget': '#E25858'
+  'danger': '#E25858'
 }
