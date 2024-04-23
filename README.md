@@ -6,7 +6,7 @@ Este projeto é uma simples aplicação de uma lista de tarefas online. A aplica
     <img src="./public/to-do-list.png" width="500"/>
 </h1>
 
-#Como executar o projeto
+# Como executar o projeto
 ## 💻 Requisitos
 
 Antes de iniciar, você deve ter o Node.js e o NPM instalados em sua máquina.
