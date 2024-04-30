@@ -1,4 +1,3 @@
-import { Trash } from "phosphor-react";
 import { styled } from "styled-components";
 
 export const TasksContainer = styled.div`
@@ -14,6 +13,7 @@ export const TasksInfo = styled.div`
   margin: 64px 0 24px;
   height: 19px;
   font-size: 14px;
+  margin-left: 8px;
 `;
 
 export const BaseTasks = styled.div`
@@ -47,11 +47,10 @@ export const CompletedTasks = styled(BaseTasks)`
 
 export const TaskContent = styled.div`
   display: flex;
-  height: 72px;
-  display: flex;
+  height: 80px;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 16px;
+  align-items: stretch;
+  padding: 12px;
   background-color: ${(props) => props.theme["gray-500"]};
   border-radius: 8px;
   margin-bottom: 12px;
@@ -75,14 +74,17 @@ export const TaskContent = styled.div`
   }
 `;
 
-export const TrashIcon = styled(Trash)`
-  color: #808080;
-  margin: 2px 3px;
+export const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
 `;
 
 export const Task = styled.div<{ checked: boolean }>`
   display: flex;
   gap: 12px;
+
   &:hover {
     cursor: pointer;
   }
@@ -96,5 +98,44 @@ export const Task = styled.div<{ checked: boolean }>`
       text-decoration: line-through;
       color: #808080;
     `}
+  }
+`;
+
+export const ModalChildren = styled.div`
+  input {
+    background: ${(props) => props.theme["gray-400"]};
+    color: ${(props) => props.theme["gray-100"]};
+    border: 0;
+    border-radius: 8px;
+    padding: 12px;
+    width: 438px;
+
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: ${(props) => props.theme["purple"]};
+
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  button {
+    width: 80px;
+    height: 40px;
+    border-radius: 8px;
+    background: ${(props) => props.theme["blue-dark"]};
+    color: ${(props) => props.theme["gray-100"]};
+    font-size: 14px;
+      
+      &:hover {
+        background: ${(props) => props.theme["blue"]};
+        cursor: pointer;
+      }
+
   }
 `;
