@@ -34,11 +34,15 @@ export const NewTaskContainer = styled.div`
       align-items: center;
       justify-content: center;
 
-      &:hover {
+      &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+      
+      &:not(:disabled):hover {
         background: ${(props) => props.theme["blue"]};
         cursor: pointer;
       }
-
       gap: 8px;
     }
   }
