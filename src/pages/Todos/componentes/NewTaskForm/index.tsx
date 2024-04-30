@@ -22,6 +22,8 @@ export function NewTaskForm() {
 
   const { mutate } = useTaskDataMutate();
   const description = watch("description");
+  const isSubmitDisabled = !description;
+
 
   const submit = () => {
     const taskData: TaskData = {
@@ -41,7 +43,7 @@ export function NewTaskForm() {
           placeholder="Adicione uma nova tarefa"
           {...register("description")}
         />
-        <button type="submit">
+        <button type="submit" disabled={isSubmitDisabled}>
           Criar
           <PlusCircle size={18} color="#ffffff" />
         </button>
