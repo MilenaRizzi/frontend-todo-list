@@ -15,7 +15,8 @@ import { useTaskDataUpdate } from "../../../../components/hooks/useTaskDataUpdat
 import { useState } from "react";
 
 import { useTaskDataUpdateDescription } from "../../../../components/hooks/useTaskDataUpdateDescription";
-import { Modal } from "../../Modal";
+import { Modal } from "../Modal";
+
 
 export function Tasks() {
   const { data } = useTaskData();
