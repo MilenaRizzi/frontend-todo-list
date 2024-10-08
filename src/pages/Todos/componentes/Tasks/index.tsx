@@ -1,9 +1,11 @@
-import { CheckCircle, Circle, PencilLine, Trash } from "phosphor-react";
+import { CheckCircle, Circle } from "phosphor-react";
 import {
   CompletedTasks,
   CreatedTasks,
   Icons,
   ModalChildren,
+  StyledPencilLine,
+  StyledTrash,
   Task,
   TaskContent,
   TasksContainer,
@@ -111,10 +113,10 @@ export function Tasks() {
                     )
                   }
                 >
-                  <PencilLine size={18} color="#808080" />
+                <StyledPencilLine size={18} />
                 </button>
                 <button onClick={() => handleDeleteTask(taskData.id ?? -1)}>
-                  <Trash className="trashIcon" size={18} color="#808080" />
+                   <StyledTrash size={18} />
                 </button>
               </Icons>
             </TaskContent>

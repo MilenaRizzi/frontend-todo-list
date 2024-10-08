@@ -1,10 +1,28 @@
 import { styled } from "styled-components";
+import {PencilLine, Trash } from "phosphor-react";
 
 export const TasksContainer = styled.div`
   width: 736px;
-  height: 451px;
+  height: 377px;
   margin: auto;
-  margin-bottom: 20px;
+
+`;
+export const StyledPencilLine = styled(PencilLine)`
+   color: ${(props) => props.theme["gray-300"]};
+  transition: color 0.1s;
+
+  &:hover {
+    color: ${(props) => props.theme["purple"]};
+  }
+`;
+
+export const StyledTrash = styled(Trash)`
+   color: ${(props) => props.theme["gray-300"]};
+  transition: color 0.1s;
+
+  &:hover {
+    color: ${(props) => props.theme["danger"]};
+  }
 `;
 
 export const TasksInfo = styled.div`
@@ -56,6 +74,9 @@ export const TaskContent = styled.div`
   margin-bottom: 12px;
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: ${(props) => props.theme["gray-500"]};
     border: 0;
     margin-top: 5px;
@@ -79,6 +100,7 @@ export const Icons = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 2px;
+
 `;
 
 export const Task = styled.div<{ checked: boolean }>`
